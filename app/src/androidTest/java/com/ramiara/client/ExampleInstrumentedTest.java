@@ -1,4 +1,4 @@
-package com.ramiara.top14client;
+package com.ramiara.client;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.ramiara.top14client", appContext.getPackageName());
+        assertEquals("com.ramiara.fmobile.client", appContext.getPackageName());
     }
 }

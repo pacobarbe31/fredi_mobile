@@ -1,4 +1,4 @@
-package com.ramiara.top14client;
+package com.ramiara.client;
 
 import org.junit.Test;
 
