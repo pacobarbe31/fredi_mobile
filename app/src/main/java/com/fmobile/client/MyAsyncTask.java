@@ -83,8 +83,8 @@ public class MyAsyncTask extends AsyncTask<String, Void, String> {
                 JSONObject jsonObject = new JSONObject(jsonString);
 
                 // Récupère la liste des LigneFrais
-                if (jsonObject.isNull("LigneFrais")==false) {
-                    JSONArray LigneFraisArray = jsonObject.getJSONArray("LigneFrais");
+                if (jsonObject.isNull("lignes_frais")==false) {
+                    JSONArray LigneFraisArray = jsonObject.getJSONArray("lignes_frais");
 
                     // Boucle de lecture des LigneFrais
                     for (int i = 0; i < LigneFraisArray.length(); i++) {
@@ -92,12 +92,17 @@ public class MyAsyncTask extends AsyncTask<String, Void, String> {
                         JSONObject LigneFraisJsonObject = LigneFraisArray.getJSONObject(i);
                         // Crée un objet métier LigneFrais à partir de l'objet JSONObject
                         LigneFrais laLigneFrais = new LigneFrais(LigneFraisJsonObject);
+                        //laLigneFrais.setTrajet(obj.getString("trajet"));
+
                         // Ajoute l'objet métier dans la collection ArrayList<LigneFrais>
                         myLigneFrais.add(laLigneFrais);
+
                         // Ajoute la date du LigneFrais dans la collection ArrayList<String>
-                        myArrayList.add(laLigneFrais.trajet);
+                        myArrayList.add("Bonjour"); // (laLigneFrais.trajet)
+
                         // Affiche un message en bas de liste
                         TextView textView = (TextView) myActivity.findViewById(R.id.tv_message);
+
                         textView.setText(String.valueOf(LigneFraisArray.length()) + " lignes de frais(s)");
 
                     }

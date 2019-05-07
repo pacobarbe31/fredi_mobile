@@ -35,22 +35,22 @@ public class DetailsActivity extends AppCompatActivity {
         //myViewId.setText("ID Bordereau : " + myData[0]);
 
         myViewdate = (TextView) findViewById(R.id.tv_date);
-        myViewdate.setText("Date du trajet : " + myData[1]);
+        myViewdate.setText("Date du trajet : " + myData[0]);
 
         myViewTrajets = (TextView) findViewById(R.id.tv_Trajets);
-        myViewTrajets.setText("Trajet : " + myData[2]);
+        myViewTrajets.setText("Trajet : " + myData[1]);
 
         myViewkm = (TextView) findViewById(R.id.tv_km);
-        myViewkm.setText("Distance : " + myData[3] + " kms");
+        myViewkm.setText("Distance : " + myData[2] + " kms");
 
         myViewPeage = (TextView) findViewById(R.id.tv_Peage);
-        myViewPeage.setText("Peage : " + myData[4] + " €");
+        myViewPeage.setText("Peage : " + myData[3] + " €");
 
         myViewRepas = (TextView) findViewById(R.id.tv_repas);
-        myViewRepas.setText("Repas : " + myData[5] + " €");
+        myViewRepas.setText("Repas : " + myData[4] + " €");
 
         myViewheberg = (TextView) findViewById(R.id.tv_heberg);
-        myViewheberg.setText("Hebergement : " + myData[6] + " €");
+        myViewheberg.setText("Hebergement : " + myData[5] + " €");
 
         //myViewMotif = (TextView) findViewById(R.id.tv_motif);
         //myViewMotif.setText("Motif : " + myData[7]);
