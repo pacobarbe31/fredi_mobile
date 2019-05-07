@@ -27,19 +27,19 @@ public class LigneFrais {
     /**
      * distance
      */
-    public int km;
+    public String km;
     /**
      * montant péage
      */
-    public int peage;
+    public String peage;
     /**
      * montant repas
      */
-    public int repas;
+    public String repas;
     /**
      * montant hebergement
      */
-    public int heberg;
+    public String heberg;
     /**
      * mibelle motif
      */
@@ -57,12 +57,12 @@ public class LigneFrais {
     public LigneFrais(JSONObject jsonObject) {
         try {
             //id = jsonObject.getInt("IdBordereau");
-            date = jsonObject.getString("DateFrais");
-            trajet = jsonObject.getString("Trajet");
-            km = jsonObject.getInt("KM");
-            peage = jsonObject.getInt("Peages");
-            repas = jsonObject.getInt("CoutRepas");
-            heberg = jsonObject.getInt("CoutHebergement");
+            date = jsonObject.getString("date");
+            trajet = jsonObject.getString("trajet");
+            km = jsonObject.getString("km");
+            peage = jsonObject.getString("peage");
+            repas = jsonObject.getString("repas");
+            heberg = jsonObject.getString("heberg");
             //motif = jsonObject.getString("Motif");
             //nom_club = jsonObject.getString("NomClub");
         } catch (JSONException e) {
@@ -80,10 +80,10 @@ public class LigneFrais {
                 //Integer.toString(id),
                 date,
                 trajet,
-                Integer.toString(km),
-                Integer.toString(peage),
-                Integer.toString(repas),
-                Integer.toString(heberg)
+                km,
+                peage,
+                repas,
+                heberg
                 //motif,
                 //nom_club
         };
