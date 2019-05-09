@@ -90,21 +90,21 @@ public class MyAsyncTask extends AsyncTask<String, Void, String> {
                     for (int i = 0; i < LigneFraisArray.length(); i++) {
 
                         JSONObject LigneFraisJsonObject = LigneFraisArray.getJSONObject(i);
+
                         // Crée un objet métier LigneFrais à partir de l'objet JSONObject
                         LigneFrais laLigneFrais = new LigneFrais(LigneFraisJsonObject);
+
                         //laLigneFrais.setTrajet(obj.getString("trajet"));
 
                         // Ajoute l'objet métier dans la collection ArrayList<LigneFrais>
                         myLigneFrais.add(laLigneFrais);
 
                         // Ajoute la date du LigneFrais dans la collection ArrayList<String>
-                        myArrayList.add("Bonjour"); // (laLigneFrais.trajet)
+                        myArrayList.add("Trajet :" + laLigneFrais.trajet); // (laLigneFrais.trajet)
 
                         // Affiche un message en bas de liste
                         TextView textView = (TextView) myActivity.findViewById(R.id.tv_message);
-
                         textView.setText(String.valueOf(LigneFraisArray.length()) + " lignes de frais(s)");
-
                     }
                 } else {
                     // Pas de liste club à afficher
