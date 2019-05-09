@@ -100,7 +100,7 @@ public class MyAsyncTask extends AsyncTask<String, Void, String> {
                         myLigneFrais.add(laLigneFrais);
 
                         // Ajoute la date du LigneFrais dans la collection ArrayList<String>
-                        myArrayList.add("Trajet :" + laLigneFrais.trajet); // (laLigneFrais.trajet)
+                        myArrayList.add("Trajet : " + laLigneFrais.trajet); // (laLigneFrais.trajet)
 
                         // Affiche un message en bas de liste
                         TextView textView = (TextView) myActivity.findViewById(R.id.tv_message);

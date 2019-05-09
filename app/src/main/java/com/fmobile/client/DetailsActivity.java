@@ -35,7 +35,7 @@ public class DetailsActivity extends AppCompatActivity {
         //myViewId.setText("ID Bordereau : " + myData[0]);
 
         myViewdate = (TextView) findViewById(R.id.tv_date);
-        myViewdate.setText("Date du trajet : " + myData[0²]);
+        myViewdate.setText("Date du trajet : " + myData[1]);
 
         myViewTrajets = (TextView) findViewById(R.id.tv_Trajets);
         myViewTrajets.setText("Trajet : " + myData[0]);
