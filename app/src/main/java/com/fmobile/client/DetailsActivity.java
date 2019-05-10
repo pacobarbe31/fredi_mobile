@@ -44,13 +44,13 @@ public class DetailsActivity extends AppCompatActivity {
         myViewkm.setText("Distance : " + myData[2] + " kms");
 
         myViewPeage = (TextView) findViewById(R.id.tv_Peage);
-        myViewPeage.setText("Peage : " + myData[3] + " €");
+        myViewPeage.setText("Péage : " + myData[3] + " €");
 
         myViewRepas = (TextView) findViewById(R.id.tv_repas);
         myViewRepas.setText("Repas : " + myData[4] + " €");
 
         myViewheberg = (TextView) findViewById(R.id.tv_heberg);
-        myViewheberg.setText("Hebergement : " + myData[5] + " €");
+        myViewheberg.setText("Hébergement : " + myData[5] + " €");
 
         //myViewMotif = (TextView) findViewById(R.id.tv_motif);
         //myViewMotif.setText("Motif : " + myData[7]);
